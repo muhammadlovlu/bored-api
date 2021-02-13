@@ -1,8 +1,9 @@
-// fetch("https://randomuser.me/api")
-// .then(res => res.json())
-// .then(data => {
-//     console.log(data)
-// })
+fetch("https://randomuser.me/api/?results=5000")
+.then(res => res.json())
+.then(data => {
+    console.log(data)
+})
+
 
 function generatePassword() {
     fetch("https://randomuser.me/api/?password=special,32")
@@ -35,3 +36,7 @@ userNameCall();
 setInterval(() => {
     userNameCall();
 }, 1000);
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
