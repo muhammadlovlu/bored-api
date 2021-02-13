@@ -29,8 +29,6 @@ function userNameCall() {
             city.innerText = data.results[0].location.city;
             const country = document.getElementById("country");
             country.innerText = data.results[0].location.country;
-            console.log(country.innerText);
-
         })
 }
 userNameCall();
